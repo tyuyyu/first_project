@@ -140,217 +140,130 @@ def print_res(input_array, dist):
         if k == 0:
             for d in range(len(input_array)):
                 if input_array[d] == 0:
-                    elem_length = len(block_zero_upper_bottom)
-                    array_all[0].append(block_zero_upper_bottom)
-                    array_all[0].append((dist[d] - elem_length) * " ")
+                    elem_length = block_zero_upper_bottom
                 elif input_array[d] == 1:
-                    elem_length = len(block_one_first)
-                    array_all[0].append(block_one_first)
-                    array_all[0].append((dist[d] - elem_length) * " ")
+                    elem_length = block_one_first
                 elif input_array[d] == 2:
-                    elem_length = len(block_two_first)
-                    array_all[0].append(block_two_first)
-                    array_all[0].append((dist[d] - elem_length) * " ")
+                    elem_length = block_two_first
                 elif input_array[d] == 3:
-                    elem_length = len(block_three_first_fifth)
-                    array_all[k].append(block_three_first_fifth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_three_first_fifth
                 elif input_array[d] == 4:
-                    elem_length = len(block_four_first_sec)
-                    array_all[k].append(block_four_first_sec)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_four_first_sec
                 elif input_array[d] == 5:
-                    elem_length = len(block_five_first)
-                    array_all[k].append(block_five_first)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_five_first
                 elif input_array[d] == 6:
-                    elem_length = len(block_six_top_bottom)
-                    array_all[k].append(block_six_top_bottom)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_six_top_bottom
                 elif input_array[d] == 7:
-                    elem_length = len(block_seven_first)
-                    array_all[k].append(block_seven_first)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_seven_first
                 elif input_array[d] == 8:
-                    elem_length = len(block_eight_135)
-                    array_all[k].append(block_eight_135)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_eight_135
                 elif input_array[d] == 9:
-                    elem_length = len(block_nine_first_third)
-                    array_all[k].append(block_nine_first_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_nine_first_third
+
+                array_all[k].append(elem_length)
+                array_all[k].append((dist[d] - len(elem_length)) * " ")
 
         elif k == 1:
             for d in range(len(input_array)):
                 if input_array[d] == 0:
-                    elem_length = len(block_zero_middle)
-                    array_all[k].append(block_zero_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_zero_middle
                 elif input_array[d] == 1:
-                    elem_length = len(block_one_middle)
-                    array_all[k].append(block_one_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_one_middle
                 elif input_array[d] == 2:
-                    elem_length = len(block_two_second)
-                    array_all[k].append(block_two_second)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_two_second
                 elif input_array[d] == 3:
-                    elem_length = len(block_three_sec_fourth)
-                    array_all[k].append(block_three_sec_fourth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_three_sec_fourth
                 elif input_array[d] == 4:
-                    elem_length = len(block_four_first_sec)
-                    array_all[k].append(block_four_first_sec)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_four_first_sec
                 elif input_array[d] == 5:
-                    elem_length = len(block_five_sec)
-                    array_all[k].append(block_five_sec)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_five_sec
                 elif input_array[d] == 6:
-                    elem_length = len(block_six_sec)
-                    array_all[k].append(block_six_sec)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_six_sec
                 elif input_array[d] == 7:
-                    elem_length = len(block_seven_sec)
-                    array_all[k].append(block_seven_sec)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_seven_sec
                 elif input_array[d] == 8:
-                    elem_length = len(block_eight_24)
-                    array_all[k].append(block_eight_24)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_eight_24
                 elif input_array[d] == 9:
-                    elem_length = len(block_nine_sec)
-                    array_all[k].append(block_nine_sec)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_nine_sec
+
+                array_all[k].append(elem_length)
+                array_all[k].append((dist[d] - len(elem_length)) * " ")
 
         elif k == 2:
             for d in range(len(input_array)):
                 if input_array[d] == 0:
-                    elem_length = len(block_zero_middle)
-                    array_all[k].append(block_zero_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_zero_middle
                 elif input_array[d] == 1:
-                    elem_length = len(block_one_middle)
-                    array_all[k].append(block_one_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_one_middle
                 elif input_array[d] == 2:
-                    elem_length = len(block_two_third)
-                    array_all[k].append(block_two_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_two_third
                 elif input_array[d] == 3:
-                    elem_length = len(block_three_middle)
-                    array_all[k].append(block_three_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_three_middle
                 elif input_array[d] == 4:
-                    elem_length = len(block_four_third)
-                    array_all[k].append(block_four_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_four_third
                 elif input_array[d] == 5:
-                    elem_length = len(block_five_third)
-                    array_all[k].append(block_five_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_five_third
                 elif input_array[d] == 6:
-                    elem_length = len(block_six_third)
-                    array_all[k].append(block_six_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_six_third
                 elif input_array[d] == 7:
-                    elem_length = len(block_seven_third)
-                    array_all[k].append(block_seven_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_seven_third
                 elif input_array[d] == 8:
-                    elem_length = len(block_eight_135)
-                    array_all[k].append(block_eight_135)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_eight_135
                 elif input_array[d] == 9:
-                    elem_length = len(block_nine_first_third)
-                    array_all[k].append(block_nine_first_third)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_nine_first_third
+                
+                array_all[k].append(elem_length)
+                array_all[k].append((dist[d] - len(elem_length)) * " ")
 
         elif k == 3:
             for d in range(len(input_array)):
                 if input_array[d] == 0:
-                    elem_length = len(block_zero_middle)
-                    array_all[k].append(block_zero_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_zero_middle
                 elif input_array[d] == 1:
-                    elem_length = len(block_one_middle)
-                    array_all[k].append(block_one_middle)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_one_middle
                 elif input_array[d] == 2:
-                    elem_length = len(block_two_fourth)
-                    array_all[k].append(block_two_fourth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_two_fourth
                 elif input_array[d] == 3:
-                    elem_length = len(block_three_sec_fourth)
-                    array_all[k].append(block_three_sec_fourth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_three_sec_fourth
                 elif input_array[d] == 4:
-                    elem_length = len(block_four_fourth_fifth)
-                    array_all[k].append(block_four_fourth_fifth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_four_fourth_fifth
                 elif input_array[d] == 5:
-                    elem_length = len(block_five_fourth)
-                    array_all[k].append(block_five_fourth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_five_fourth
                 elif input_array[d] == 6:
-                    elem_length = len(block_six_fourth)
-                    array_all[k].append(block_six_fourth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_six_fourth
                 elif input_array[d] == 7:
-                    elem_length = len(block_seven_bottom)
-                    array_all[k].append(block_seven_bottom)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_seven_bottom
                 elif input_array[d] == 8:
-                    elem_length = len(block_eight_24)
-                    array_all[k].append(block_eight_24)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_eight_24
                 elif input_array[d] == 9:
-                    elem_length = len(block_nine_fourth)
-                    array_all[k].append(block_nine_fourth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_nine_fourth
+                array_all[k].append(elem_length)
+                array_all[k].append((dist[d] - len(elem_length)) * " ")
 
         elif k == 4:
             for d in range(len(input_array)):
                 if input_array[d] == 0:
-                    elem_length = len(block_zero_upper_bottom)
-                    array_all[4].append(block_zero_upper_bottom)
-                    array_all[4].append((dist[d] - elem_length) * " ")
+                    elem_length = block_zero_upper_bottom
                 elif input_array[d] == 1:
-                    elem_length = len(block_one_bottom)
-                    array_all[4].append(block_one_bottom)
-                    array_all[4].append((dist[d] - elem_length) * " ")
+                    elem_length = block_one_bottom
                 elif input_array[d] == 2:
-                    elem_length = len(block_two_fifth)
-                    array_all[k].append(block_two_fifth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_two_fifth
                 elif input_array[d] == 3:
-                    elem_length = len(block_three_first_fifth)
-                    array_all[k].append(block_three_first_fifth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_three_first_fifth
                 elif input_array[d] == 4:
-                    elem_length = len(block_four_fourth_fifth)
-                    array_all[k].append(block_four_fourth_fifth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_four_fourth_fifth
                 elif input_array[d] == 5:
-                    elem_length = len(block_five_fifth)
-                    array_all[k].append(block_five_fifth)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_five_fifth
                 elif input_array[d] == 6:
-                    elem_length = len(block_six_top_bottom)
-                    array_all[k].append(block_six_top_bottom)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_six_top_bottom
                 elif input_array[d] == 7:
-                    elem_length = len(block_seven_bottom)
-                    array_all[k].append(block_seven_bottom)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_seven_bottom
                 elif input_array[d] == 8:
-                    elem_length = len(block_eight_135)
-                    array_all[k].append(block_eight_135)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_eight_135
                 elif input_array[d] == 9:
-                    elem_length = len(block_nine_bottom)
-                    array_all[k].append(block_nine_bottom)
-                    array_all[k].append((dist[d] - elem_length) * " ")
+                    elem_length = block_nine_bottom
+                array_all[k].append(elem_length)
+                array_all[k].append((dist[d] - len(elem_length)) * " ")
 
     return array_all
 
